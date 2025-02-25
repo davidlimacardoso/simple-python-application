@@ -4,8 +4,6 @@ name: CI Pipeline
 on:
   push:
     branches: [ main, develop ]
-  pull_request:
-    branches: [ main, develop ]
 
 env:
   PROJECT_NAME: simple-python-application
@@ -30,12 +28,8 @@ jobs:
             -Dsonar.host.url=${{ secrets.SONAR_URL }} \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }} \
-            -Dsonar.projectKey=${{ env.PROJECT_NAME }} \
+            -Dsonar.projectKey=${{ secrets.SONAR_ORGANIZATION }}:${{ env.PROJECT_NAME }} \
             -Dsonar.sources=app/ \
-            -Dsonar.junit.reportsPath=target/surefire-reports/ \
-            -Dsonar.jacoco.reportsPath=target/jacoco.exec \
-            -Dsonar.java.checkstyle.reportPaths=target/checkstyle-result.xml \
-            -Dsonar.java.binaries=target/test-classes/com/visualpathit/account/controllerTest/
 
       - name: SonarQube Quality Gate check
         id: sonarqube-quality-gate-check
