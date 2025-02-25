@@ -20,17 +20,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup SonarQube
-        uses: warchant/setup-sonar-scanner@v8
-
       - name: SonarQube Scan
-        run: |
-          sonar-scanner \
+        uses: sonarsource/sonarqube-scan-action@master
+        env:
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        with:
+          args: >        
             -Dsonar.host.url=${{ secrets.SONAR_URL }} \
             -Dsonar.login=${{ secrets.SONAR_TOKEN }} \
             -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }} \
             -Dsonar.projectKey=${{ secrets.SONAR_ORGANIZATION }}_develop \
-            -Dsonar.sources=app/ \
+            -Dsonar.sources=app/
 
       - name: SonarQube Quality Gate check
         id: sonarqube-quality-gate-check
@@ -41,6 +42,12 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_URL }}
         # continue-on-error: true
+     
+      # Optionally you can use the output from the Quality Gate in another step.
+      # The possible outputs of the `quality-gate-status` variable are `PASSED`, `WARN` or `FAILED`.
+      - name: "Example show SonarQube Quality Gate Status value"
+        run: echo "The Quality Gate status is ${{ steps.sonarqube-quality-gate-check.outputs.quality-gate-status }}"
+
 
   test:
     needs: security_analysis
