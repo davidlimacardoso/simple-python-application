@@ -132,3 +132,7 @@ dmypy.json
 
 files/html/*.html
 files/pdf/*.pdf
+
+# Act test action localy
+act.*
+.actrc
