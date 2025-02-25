@@ -48,6 +48,7 @@ jobs:
         # continue-on-error: true
 
   test:
+    depends-on: security_analysis
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -94,7 +95,7 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ PROJECT_NAME }}:latest
-            ${{ secrets.DOCKER_USERNAME }}/${{ PROJECT_NAME }}:${{ steps.tag.outputs.TAG }}
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:${{ steps.tag.outputs.TAG }}
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/:latest
           cache-to: type=inline
