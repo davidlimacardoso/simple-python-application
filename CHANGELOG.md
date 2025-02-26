@@ -1,3 +1,32 @@
+## [1.2.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.2.0...v1.2.1) (2025-02-26)
+
+
+### Bug Fixes
+
+* Remove saída de notas de lançamento e ajusta a captura da versão no workflow de release ([4525ed8](https://github.com/davidlimacardoso/simple-python-application/commit/4525ed8330cd9a0d0cfdd17921bf2134aadf6c36))
+
+
+
+
+
+## [1.2.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.2.0...v1.2.1) (2025-02-26)
+
+
+### Bug Fixes
+
+* Remove saída de notas de lançamento e ajusta a captura da versão no workflow de release ([4525ed8](https://github.com/davidlimacardoso/simple-python-application/commit/4525ed8330cd9a0d0cfdd17921bf2134aadf6c36))
+
+
+
+
+
+## [1.2.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.2.0...v1.2.1) (2025-02-26)
+
+
+### Bug Fixes
+
+* Remove saída de notas de lançamento e ajusta a captura da versão no workflow de release ([4525ed8](https://github.com/davidlimacardoso/simple-python-application/commit/4525ed8330cd9a0d0cfdd17921bf2134aadf6c36))
+
 # [1.2.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.1.0...v1.2.0) (2025-02-26)
 
 
