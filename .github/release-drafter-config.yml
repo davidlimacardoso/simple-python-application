@@ -35,7 +35,7 @@ categories:
 category-template: >-
   ### $TITLE
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-commitish: master  # cspell:ignore commitish
+commitish: main  # cspell:ignore commitish
 exclude-contributors:
   - dependabot
   - renovate
