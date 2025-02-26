@@ -1,0 +1,14 @@
+name: Release Drafter
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  release-drafter:
+    permissions:
+      contents: write
+    uses: ./.github/release-drafter.yml
+
+    name: release-drafter
