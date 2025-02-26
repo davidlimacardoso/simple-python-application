@@ -61,4 +61,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
+          config-path: release-drafter-config.yml
           commitish: ${{ github.ref }}
