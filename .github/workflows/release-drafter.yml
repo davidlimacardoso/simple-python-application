@@ -1,24 +1,29 @@
+# Drafts next Release notes as PRs are merged into "main"
+# see: https://github.com/marketplace/actions/release-drafter
 name: Release Drafter
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    types: [opened, reopened, synchronize, labeled, unlabeled]
 
 permissions:
   contents: read
 
 jobs:
   update_release_draft:
-    # if: github.repository == 'myorg/reponame'  # Uncomment this and set the repo name to ensure releases are not created on forks
     permissions:
-      # Write permission is required to create a GitHub release
+      # write permission required to create a github release
       contents: write
-      pull-requests: read
+      # write permission required for autolabeler
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: release-drafter/release-drafter@v5
         with:
-          config-name: release-drafter.yml
+        # this file MUST be relative to '.github/'
+          config-name: release-drafter-config.yml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

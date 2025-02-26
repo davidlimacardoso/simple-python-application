@@ -1,0 +1,107 @@
+# For more information about release-drafter configs, see:
+# https://github.com/marketplace/actions/release-drafter#configuration
+
+# release title (appears, for example, in repo's sidebar)
+# NOTE: $RESOLVED_VERSION == $MAJOR.$MINOR.$PATCH
+name-template: "v$RESOLVED_VERSION"
+
+# git tag to be used for the release
+tag-template: "v$RESOLVED_VERSION"
+
+# Release Notes template (keep it as is)
+template: |
+  ## What’s Changed
+
+  $CHANGES
+
+# Define which PR label will cause which kind of
+# version bump (following semantic versioning).
+# If no labels match, the default "patch".
+version-resolver:
+  major:
+    labels:
+      - "major"
+      - "BREAKING CHANGE"
+  minor:
+    labels:
+      - "minor"
+      - "feature"
+      - "enhancement"
+  patch:
+    labels:
+      - "chore"
+      - "documentation"
+      - "bug"
+      - "fix"
+      - "refactor"
+      - "dependencies"
+  default: patch
+
+# Define which PR label will be listed in which
+# category of changes in the Release Notes.
+# If no labels match, the default is to be
+# listed on the top, before the sections.
+categories:
+  - title: "🚨 BREAKING CHANGES 🚨"
+    labels:
+      - "BREAKING CHANGE"
+  - title: "🚀 New Features"
+    labels:
+      - "feature"
+      - "enhancement"
+  - title: "🐛 Bug Fixes"
+    labels:
+      - "fix"
+      - "bug"
+  - title: "🛠️ Other Changes"
+    labels:
+      - "chore"
+      - "refactor"
+      - "documentation"
+      - "style"
+      - "test"
+      - "revert"
+      - "dependencies"
+      - "ci"
+
+# This is an important part! The autolabeler is what
+# sets the label to your PR based on the PRs title.
+autolabeler:
+  - label: "   CHANGE"
+    title:
+      - "/breaking change/i"
+
+  - label: "chore"
+    title:
+      - "/^chore/i"
+      - "/^style/i"
+
+  - label: "documentation"
+    title:
+      - "/^doc/i"
+
+  - label: "fix"
+    title:
+      - "/^fix/i"
+      - "/^bug/i"
+
+  - label: "ci"
+    title:
+      - "/^ci/i"
+
+  - label: "refactor"
+    title:
+      - "/^refactor/i"
+
+  - label: "feature"
+    title:
+      - "/^feature/i"
+      - "/^feat/i"
+
+  - label: "test"
+    title:
+      - "/^test/i"
+
+  - label: "revert"
+    title:
+      - "/^revert/i"
