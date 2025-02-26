@@ -7,6 +7,6 @@ on:
 
 jobs:
   release-drafter:
+    uses: ./.github/workflows/release-drafter.yml
     permissions:
       contents: write
-    uses: ./.github/workflows/release-drafter.yml@main
