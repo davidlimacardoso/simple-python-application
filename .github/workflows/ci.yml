@@ -1,9 +1,17 @@
-name: Release Drafter
+name: CI Pipeline
 
 on:
   push:
-    branches:
-      - master
+    branches: 
+      - main
+      - develop
+
+env:
+  PROJECT_NAME: simple-python-application
+
+permissions:
+  contents: write
+  actions: write
 
 jobs:
   release-drafter:
