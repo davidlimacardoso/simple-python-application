@@ -1,3 +1,32 @@
+## [1.4.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.0...v1.4.1) (2025-02-26)
+
+
+### Bug Fixes
+
+* Corrige a leitura do arquivo de versão para VERSION.txt ([81ed7af](https://github.com/davidlimacardoso/simple-python-application/commit/81ed7af2fb639596e17bce3b7a039dde420fab80))
+
+
+
+
+
+## [1.4.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.0...v1.4.1) (2025-02-26)
+
+
+### Bug Fixes
+
+* Corrige a leitura do arquivo de versão para VERSION.txt ([81ed7af](https://github.com/davidlimacardoso/simple-python-application/commit/81ed7af2fb639596e17bce3b7a039dde420fab80))
+
+
+
+
+
+## [1.4.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.0...v1.4.1) (2025-02-26)
+
+
+### Bug Fixes
+
+* Corrige a leitura do arquivo de versão para VERSION.txt ([81ed7af](https://github.com/davidlimacardoso/simple-python-application/commit/81ed7af2fb639596e17bce3b7a039dde420fab80))
+
 # [1.4.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.3.0...v1.4.0) (2025-02-26)
 
 
