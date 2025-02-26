@@ -5,30 +5,9 @@ on:
     branches:
       - master
 
-permissions:
-  contents: write
 jobs:
   release-drafter:
-    name: release-drafter
-    outputs:
-      body: ${{ steps.release.outputs.body }}
-      html_url: ${{ steps.release.outputs.html_url }}
-      id: ${{ steps.release.outputs.id }}
-      major_version: ${{ steps.release.outputs.major_version }}
-      minor_version: ${{ steps.release.outputs.minor_version }}
-      name: ${{ steps.release.outputs.name }}
-      patch_version: ${{ steps.release.outputs.patch_version }}
-      resolved_version: ${{ steps.release.outputs.resolved_version }}
-      tag_name: ${{ steps.release.outputs.tag_name }}
-      upload_url: ${{ steps.release.outputs.upload_url }}
+    uses: ./.github/workflows/release-drafter.yml
     permissions:
       contents: write
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚀 Run Release Drafter
-        id: release
-        uses: release-drafter/release-drafter@v6
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          commitish: ${{ github.ref }}
+      
