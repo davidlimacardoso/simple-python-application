@@ -10,6 +10,9 @@ on:
       release_version: 
         description: 'The version of the release'
         value: ${{ jobs.semantic-release.outputs.release_version }}
+      release_changelog:
+        description: 'The changelog of the release'
+        value: ${{ jobs.semantic-release.outputs.release_changelog }}
 
 jobs:
   semantic-release:
@@ -22,6 +25,7 @@ jobs:
       id-token: write
     outputs:
       release_version: ${{ steps.release.outputs.release_version }}
+      release_changelog: ${{ steps.release.outputs.release_changelog }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -47,7 +51,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: | 
           npx semantic-release
-          ls -la
-          VERSION=$(cat VERSION)
+          VERSION=$(cat VERSION.txt)
+          CHANGELOG=$(cat CHANGELOG.md)
           echo "Resolved version: $VERSION"
           echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "changelog=$CHANGELOG" >> $GITHUB_OUTPUT
