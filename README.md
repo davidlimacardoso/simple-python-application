@@ -19,4 +19,4 @@ This sample python application.
       - Allowed to push and merge: No one
 
 ## Teste ##
-Testing CI v3
+Testing CI v2
