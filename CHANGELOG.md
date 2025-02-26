@@ -1,3 +1,32 @@
+# [1.3.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.2.1...v1.3.0) (2025-02-26)
+
+
+### Features
+
+* Adiciona pipeline CI com etapas de teste e configuração do ambiente Python ([7e8eea0](https://github.com/davidlimacardoso/simple-python-application/commit/7e8eea0d99f219ff21aeddc7fa812e8bf909a5c4))
+
+
+
+
+
+# [1.3.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.2.1...v1.3.0) (2025-02-26)
+
+
+### Features
+
+* Adiciona pipeline CI com etapas de teste e configuração do ambiente Python ([7e8eea0](https://github.com/davidlimacardoso/simple-python-application/commit/7e8eea0d99f219ff21aeddc7fa812e8bf909a5c4))
+
+
+
+
+
+# [1.3.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.2.1...v1.3.0) (2025-02-26)
+
+
+### Features
+
+* Adiciona pipeline CI com etapas de teste e configuração do ambiente Python ([7e8eea0](https://github.com/davidlimacardoso/simple-python-application/commit/7e8eea0d99f219ff21aeddc7fa812e8bf909a5c4))
+
 ## [1.2.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.2.0...v1.2.1) (2025-02-26)
 
 
