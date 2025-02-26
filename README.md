@@ -17,4 +17,3 @@ This sample python application.
     - prod
       - Allowed to merge: Maintainers
       - Allowed to push and merge: No one
-## Teste
