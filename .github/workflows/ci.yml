@@ -4,7 +4,6 @@ on:
   push:
     branches: 
       - main
-      - develop
 
 env:
   PROJECT_NAME: simple-python-application
