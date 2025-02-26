@@ -9,6 +9,6 @@ jobs:
   release-drafter:
     permissions:
       contents: write
-    uses: ./.github/workflows/release-drafter.yml
+    uses: .github/workflows/release-drafter.yml
 
     name: release-drafter
