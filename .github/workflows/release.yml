@@ -1,11 +1,14 @@
+# references: https://lorenzomiscoli.com/automating-versioning-and-releases-using-semantic-release/
 name: Release
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: read
+  workflow_call:
+    outputs:
+      release_version: ${{ github.event.outputs.release_version }}
+      release_notes: ${{ github.event.outputs.release_notes }}
 
 jobs:
   release:
@@ -16,6 +19,9 @@ jobs:
       issues: write 
       pull-requests: write
       id-token: write
+    outputs:
+      release_version: ${{ steps.release.outputs.release_version }}
+      release_notes: ${{ steps.release.outputs.release_notes }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -30,4 +36,7 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npx semantic-release
+        run: | 
+          npx semantic-release
+          echo "release_version=$(cat VERSION.txt)" >> $GITHUB_OUTPUT
+          echo "release_notes=$(cat CHANGELOG.md)" >> $GITHUB_OUTPUT
