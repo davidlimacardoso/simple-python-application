@@ -1,5 +1,5 @@
 # references: https://lorenzomiscoli.com/automating-versioning-and-releases-using-semantic-release/
-name: Release
+name: Semantic Release
 on:
   push:
     branches:
@@ -7,8 +7,13 @@ on:
 
   workflow_call:
     outputs:
-      release_version: ${{ jobs.semantic-release.outputs.version }}
-      release_notes: ${{ jobs.semantic-release.outputs.notes }}
+      release_version: 
+        description: 'The version of the release'
+        value: ${{ jobs.semantic-release.outputs.release_version }}
+        
+      release_notes:
+        description: 'The notes of the release' 
+        values: ${{ jobs.semantic-release.outputs.release_notes }}
 
 jobs:
   semantic-release:
@@ -20,8 +25,8 @@ jobs:
       pull-requests: write
       id-token: write
     outputs:
-      version: ${{ steps.release.outputs.release_version }}
-      notes: ${{ steps.release.outputs.release_notes }}
+      release_version: ${{ steps.release.outputs.release_version }}
+      release_notes: ${{ steps.release.outputs.release_notes }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
