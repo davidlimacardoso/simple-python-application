@@ -21,9 +21,10 @@ jobs:
       pull-requests: write
     runs-on: ubuntu-latest
     steps:
-      - uses: release-drafter/release-drafter@v5
+      - uses: release-drafter/release-drafter@v6
         with:
         # this file MUST be relative to '.github/'
           config-name: release-drafter-config.yml
+          commitish: master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
