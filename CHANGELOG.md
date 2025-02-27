@@ -1,3 +1,35 @@
+## [1.4.6](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.5...v1.4.6) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar a cor de fundo do corpo para azul no template index.html ([35b0fc0](https://github.com/davidlimacardoso/simple-python-application/commit/35b0fc060007d85b2c103e06ee8c580221f03f17))
+* alterar a cor de fundo do corpo para vermelho no template index.html ([5d28c7e](https://github.com/davidlimacardoso/simple-python-application/commit/5d28c7ebdfd753f74bbc87b88b07f158851e98a9))
+
+
+
+
+
+## [1.4.6](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.5...v1.4.6) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar a cor de fundo do corpo para azul no template index.html ([35b0fc0](https://github.com/davidlimacardoso/simple-python-application/commit/35b0fc060007d85b2c103e06ee8c580221f03f17))
+* alterar a cor de fundo do corpo para vermelho no template index.html ([5d28c7e](https://github.com/davidlimacardoso/simple-python-application/commit/5d28c7ebdfd753f74bbc87b88b07f158851e98a9))
+
+
+
+
+
+## [1.4.6](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.5...v1.4.6) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar a cor de fundo do corpo para azul no template index.html ([35b0fc0](https://github.com/davidlimacardoso/simple-python-application/commit/35b0fc060007d85b2c103e06ee8c580221f03f17))
+* alterar a cor de fundo do corpo para vermelho no template index.html ([5d28c7e](https://github.com/davidlimacardoso/simple-python-application/commit/5d28c7ebdfd753f74bbc87b88b07f158851e98a9))
+
 ## [1.4.5](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.4...v1.4.5) (2025-02-27)
 
 
