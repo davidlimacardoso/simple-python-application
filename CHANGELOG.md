@@ -1,3 +1,32 @@
+## [1.4.2](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.1...v1.4.2) (2025-02-27)
+
+
+### Bug Fixes
+
+* remover linha em branco no final do Dockerfile ([bb2f752](https://github.com/davidlimacardoso/simple-python-application/commit/bb2f7524479894ac9448ad60b5f4283f8117ef7f))
+
+
+
+
+
+## [1.4.2](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.1...v1.4.2) (2025-02-27)
+
+
+### Bug Fixes
+
+* remover linha em branco no final do Dockerfile ([bb2f752](https://github.com/davidlimacardoso/simple-python-application/commit/bb2f7524479894ac9448ad60b5f4283f8117ef7f))
+
+
+
+
+
+## [1.4.2](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.1...v1.4.2) (2025-02-27)
+
+
+### Bug Fixes
+
+* remover linha em branco no final do Dockerfile ([bb2f752](https://github.com/davidlimacardoso/simple-python-application/commit/bb2f7524479894ac9448ad60b5f4283f8117ef7f))
+
 ## [1.4.1](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.0...v1.4.1) (2025-02-26)
 
 
