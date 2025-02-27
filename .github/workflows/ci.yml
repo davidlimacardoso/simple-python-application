@@ -37,6 +37,11 @@ jobs:
     needs: [test]
     name: Semantic Release
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write 
+      issues: write 
+      pull-requests: write
+      id-token: write
     uses: davidlimacardoso/github-actions/.github/workflows/semantic-release.yml@main
     
   
