@@ -46,7 +46,7 @@ jobs:
     
   
   build-and-push:
-    needs: [semantic-release]
+    needs: [release]
     runs-on: ubuntu-latest
     env:
       TAG: ${{ needs.release.outputs.release_version }}
