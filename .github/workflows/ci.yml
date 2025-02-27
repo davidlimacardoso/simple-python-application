@@ -33,7 +33,7 @@ jobs:
         run: |
           pytest
 
-  semantic-release:
+  release:
     needs: [test]
     name: Semantic Release
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
@@ -49,7 +49,7 @@ jobs:
     needs: [semantic-release]
     runs-on: ubuntu-latest
     env:
-      TAG: ${{ needs.semantic-release.outputs.release_version }}
+      TAG: ${{ needs.release.outputs.release_version }}
 
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     steps:
