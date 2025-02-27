@@ -1,3 +1,32 @@
+## [1.4.5](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.4...v1.4.5) (2025-02-27)
+
+
+### Bug Fixes
+
+* atualizar ação de checkout para v4 e ajustar contexto de construção da imagem ([31db01c](https://github.com/davidlimacardoso/simple-python-application/commit/31db01ce001d3e4f07cd5319965915662d086c55))
+
+
+
+
+
+## [1.4.5](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.4...v1.4.5) (2025-02-27)
+
+
+### Bug Fixes
+
+* atualizar ação de checkout para v4 e ajustar contexto de construção da imagem ([31db01c](https://github.com/davidlimacardoso/simple-python-application/commit/31db01ce001d3e4f07cd5319965915662d086c55))
+
+
+
+
+
+## [1.4.5](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.4...v1.4.5) (2025-02-27)
+
+
+### Bug Fixes
+
+* atualizar ação de checkout para v4 e ajustar contexto de construção da imagem ([31db01c](https://github.com/davidlimacardoso/simple-python-application/commit/31db01ce001d3e4f07cd5319965915662d086c55))
+
 ## [1.4.4](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.3...v1.4.4) (2025-02-27)
 
 
