@@ -1,3 +1,32 @@
+## [1.4.4](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.3...v1.4.4) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar comando para listar arquivos no diretório pai no workflow de CI ([f704888](https://github.com/davidlimacardoso/simple-python-application/commit/f7048881b9c9e88804b5cc603e35ae67208337da))
+
+
+
+
+
+## [1.4.4](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.3...v1.4.4) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar comando para listar arquivos no diretório pai no workflow de CI ([f704888](https://github.com/davidlimacardoso/simple-python-application/commit/f7048881b9c9e88804b5cc603e35ae67208337da))
+
+
+
+
+
+## [1.4.4](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.3...v1.4.4) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar comando para listar arquivos no diretório pai no workflow de CI ([f704888](https://github.com/davidlimacardoso/simple-python-application/commit/f7048881b9c9e88804b5cc603e35ae67208337da))
+
 ## [1.4.3](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.2...v1.4.3) (2025-02-27)
 
 
