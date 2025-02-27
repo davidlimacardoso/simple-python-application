@@ -1,3 +1,32 @@
+## [1.4.7](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.6...v1.4.7) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar a cor de fundo do corpo para verde no template index.html ([6b42388](https://github.com/davidlimacardoso/simple-python-application/commit/6b42388dc21dc3cfd4e65916df46a3a6add12e0c))
+
+
+
+
+
+## [1.4.7](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.6...v1.4.7) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar a cor de fundo do corpo para verde no template index.html ([6b42388](https://github.com/davidlimacardoso/simple-python-application/commit/6b42388dc21dc3cfd4e65916df46a3a6add12e0c))
+
+
+
+
+
+## [1.4.7](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.6...v1.4.7) (2025-02-27)
+
+
+### Bug Fixes
+
+* alterar a cor de fundo do corpo para verde no template index.html ([6b42388](https://github.com/davidlimacardoso/simple-python-application/commit/6b42388dc21dc3cfd4e65916df46a3a6add12e0c))
+
 ## [1.4.6](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.5...v1.4.6) (2025-02-27)
 
 
