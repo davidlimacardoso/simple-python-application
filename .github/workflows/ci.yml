@@ -37,7 +37,7 @@ jobs:
     needs: [test]
     name: Semantic Release
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    uses: ./github/workflows/release.yml
+    uses: davidlimacardoso/github-actions/.github/workflows/semantic-release@main
     #teste
     # outputs: 
     #   release_version: ${{ steps.semantic-release.outputs.release_version }}
