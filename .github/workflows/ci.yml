@@ -62,6 +62,7 @@ jobs:
           
       - name: Build and push
         uses: docker/build-push-action@v6
+        run: ls -la
         with:
           context: src/.
           push: true
