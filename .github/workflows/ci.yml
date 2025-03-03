@@ -78,7 +78,7 @@ jobs:
           push: true
           file: src/Dockerfile
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ secrets.PROJECT_NAME }}-${{ secrets.ENVIRONMENT }}:${{ env.TAG }}
-            ${{ secrets.DOCKER_USERNAME }}/${{ secrets.PROJECT_NAME }}-${{ secrets.ENVIRONMENT }}:latest
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}-${{ env.ENVIRONMENT }}:${{ env.TAG }}
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}-${{ env.ENVIRONMENT }}:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/:latest
           cache-to: type=inline
