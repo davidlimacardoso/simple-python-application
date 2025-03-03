@@ -1,3 +1,94 @@
+# [1.7.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.6.0...v1.7.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir referência de variáveis no workflow de CI para uso correto no Docker ([6f9fb9a](https://github.com/davidlimacardoso/simple-python-application/commit/6f9fb9a0ebc865fdd8e19bfa841fd1d2f63f2ace))
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([04b63a3](https://github.com/davidlimacardoso/simple-python-application/commit/04b63a34294c427731ca53f88a3a7cbe5d2f2552))
+
+
+
+
+
+# [1.7.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.6.0...v1.7.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir referência de variáveis no workflow de CI para uso correto no Docker ([6f9fb9a](https://github.com/davidlimacardoso/simple-python-application/commit/6f9fb9a0ebc865fdd8e19bfa841fd1d2f63f2ace))
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([04b63a3](https://github.com/davidlimacardoso/simple-python-application/commit/04b63a34294c427731ca53f88a3a7cbe5d2f2552))
+
+
+
+
+
+# [1.7.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.6.0...v1.7.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir referência de variáveis no workflow de CI para uso correto no Docker ([6f9fb9a](https://github.com/davidlimacardoso/simple-python-application/commit/6f9fb9a0ebc865fdd8e19bfa841fd1d2f63f2ace))
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([04b63a3](https://github.com/davidlimacardoso/simple-python-application/commit/04b63a34294c427731ca53f88a3a7cbe5d2f2552))
+
+# [1.6.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.5.0...v1.6.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir variáveis de ambiente no workflow de CI para uso correto no Docker ([1ea89f5](https://github.com/davidlimacardoso/simple-python-application/commit/1ea89f558e5f01624717d0e27e5483e95ece34d1))
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([b71ee60](https://github.com/davidlimacardoso/simple-python-application/commit/b71ee60ed3f41ea01b640cc8442391748a98d271))
+* alterar cor de fundo padrão para verde no template HTML ([46e8989](https://github.com/davidlimacardoso/simple-python-application/commit/46e89890fa0f9c763c8a0635fc65037fe91cfdd0))
+
+
+
+
+
+# [1.6.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.5.0...v1.6.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir variáveis de ambiente no workflow de CI para uso correto no Docker ([1ea89f5](https://github.com/davidlimacardoso/simple-python-application/commit/1ea89f558e5f01624717d0e27e5483e95ece34d1))
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([b71ee60](https://github.com/davidlimacardoso/simple-python-application/commit/b71ee60ed3f41ea01b640cc8442391748a98d271))
+* alterar cor de fundo padrão para verde no template HTML ([46e8989](https://github.com/davidlimacardoso/simple-python-application/commit/46e89890fa0f9c763c8a0635fc65037fe91cfdd0))
+
+
+
+
+
+# [1.6.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.5.0...v1.6.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir variáveis de ambiente no workflow de CI para uso correto no Docker ([1ea89f5](https://github.com/davidlimacardoso/simple-python-application/commit/1ea89f558e5f01624717d0e27e5483e95ece34d1))
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([b71ee60](https://github.com/davidlimacardoso/simple-python-application/commit/b71ee60ed3f41ea01b640cc8442391748a98d271))
+* alterar cor de fundo padrão para verde no template HTML ([46e8989](https://github.com/davidlimacardoso/simple-python-application/commit/46e89890fa0f9c763c8a0635fc65037fe91cfdd0))
+
 # [1.5.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.7...v1.5.0) (2025-03-03)
 
 
