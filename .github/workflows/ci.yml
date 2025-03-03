@@ -60,7 +60,9 @@ jobs:
     needs: [release]
     runs-on: ubuntu-latest
     env:
-      TAG: ${{ github.ref == 'refs/heads/develop' && 'dev-' || '' }}${{ needs.release.outputs.release_version }}
+      TAG: ${{ needs.release.outputs.release_version }}
+      REPOSITORY: ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}-${{ env.ENVIRONMENT }}
+      # ${{ github.ref == 'refs/heads/develop' && 'dev-' || '' }}${{ needs.release.outputs.release_version }}
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     steps:
       - uses: actions/checkout@v4
@@ -78,7 +80,7 @@ jobs:
           push: true
           file: src/Dockerfile
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:${{ env.TAG }}
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest
+            ${{ REPOSITORY }}:${{ env.TAG }}
+            ${{ REPOSITORY }}:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/:latest
           cache-to: type=inline
