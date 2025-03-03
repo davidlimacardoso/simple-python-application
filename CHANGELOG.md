@@ -1,3 +1,56 @@
+# [1.5.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.7...v1.5.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir formatação do arquivo de configuração do CI ([3ad7d27](https://github.com/davidlimacardoso/simple-python-application/commit/3ad7d279b0ce78b6494dff219623baab7624e12a))
+
+
+### Features
+
+* adicionar configuração de deployment e service para a aplicação Python ([40f2ff2](https://github.com/davidlimacardoso/simple-python-application/commit/40f2ff2927885ecf4589d36c055cb5a60174fcb7))
+* alterar cor de fundo padrão para branco no template HTML ([a4ec8cc](https://github.com/davidlimacardoso/simple-python-application/commit/a4ec8ccb15c0cafcbc20c3219a48dc2b194fa092))
+* alterar cor de fundo padrão para verde no template HTML ([1d816b1](https://github.com/davidlimacardoso/simple-python-application/commit/1d816b177d91ae3213c4a2b9f528dd9e450f37fc))
+* atualizar configuração do CI para suportar ambientes de produção e desenvolvimento ([3c56c9f](https://github.com/davidlimacardoso/simple-python-application/commit/3c56c9f061cb960ca4252c385417b4064af65de2))
+
+
+
+
+
+# [1.5.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.7...v1.5.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir formatação do arquivo de configuração do CI ([3ad7d27](https://github.com/davidlimacardoso/simple-python-application/commit/3ad7d279b0ce78b6494dff219623baab7624e12a))
+
+
+### Features
+
+* adicionar configuração de deployment e service para a aplicação Python ([40f2ff2](https://github.com/davidlimacardoso/simple-python-application/commit/40f2ff2927885ecf4589d36c055cb5a60174fcb7))
+* alterar cor de fundo padrão para branco no template HTML ([a4ec8cc](https://github.com/davidlimacardoso/simple-python-application/commit/a4ec8ccb15c0cafcbc20c3219a48dc2b194fa092))
+* alterar cor de fundo padrão para verde no template HTML ([1d816b1](https://github.com/davidlimacardoso/simple-python-application/commit/1d816b177d91ae3213c4a2b9f528dd9e450f37fc))
+* atualizar configuração do CI para suportar ambientes de produção e desenvolvimento ([3c56c9f](https://github.com/davidlimacardoso/simple-python-application/commit/3c56c9f061cb960ca4252c385417b4064af65de2))
+
+
+
+
+
+# [1.5.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.7...v1.5.0) (2025-03-03)
+
+
+### Bug Fixes
+
+* corrigir formatação do arquivo de configuração do CI ([3ad7d27](https://github.com/davidlimacardoso/simple-python-application/commit/3ad7d279b0ce78b6494dff219623baab7624e12a))
+
+
+### Features
+
+* adicionar configuração de deployment e service para a aplicação Python ([40f2ff2](https://github.com/davidlimacardoso/simple-python-application/commit/40f2ff2927885ecf4589d36c055cb5a60174fcb7))
+* alterar cor de fundo padrão para branco no template HTML ([a4ec8cc](https://github.com/davidlimacardoso/simple-python-application/commit/a4ec8ccb15c0cafcbc20c3219a48dc2b194fa092))
+* alterar cor de fundo padrão para verde no template HTML ([1d816b1](https://github.com/davidlimacardoso/simple-python-application/commit/1d816b177d91ae3213c4a2b9f528dd9e450f37fc))
+* atualizar configuração do CI para suportar ambientes de produção e desenvolvimento ([3c56c9f](https://github.com/davidlimacardoso/simple-python-application/commit/3c56c9f061cb960ca4252c385417b4064af65de2))
+
 ## [1.4.7](https://github.com/davidlimacardoso/simple-python-application/compare/v1.4.6...v1.4.7) (2025-02-27)
 
 
