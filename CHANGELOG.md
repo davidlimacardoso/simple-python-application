@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.7.0...v1.8.0) (2025-03-03)
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([0861a39](https://github.com/davidlimacardoso/simple-python-application/commit/0861a39488beaa4d928f82f4ac80ef774473da6e))
+* alterar cor de fundo padrão para verde no template HTML ([75c9174](https://github.com/davidlimacardoso/simple-python-application/commit/75c9174d2e209e611d3cc7638c342b82ec6d6b73))
+
 # [1.7.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.6.0...v1.7.0) (2025-03-03)
 
 
