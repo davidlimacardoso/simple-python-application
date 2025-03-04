@@ -54,8 +54,6 @@ jobs:
       pull-requests: write
       id-token: write
     uses: davidlimacardoso/github-actions/.github/workflows/semantic-release-v2.yml@main
-    with: 
-      pre_release: true 
     
   
   # build-and-push:
