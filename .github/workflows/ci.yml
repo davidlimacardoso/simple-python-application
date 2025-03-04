@@ -4,13 +4,17 @@ on:
   push:
     branches:
       - main
-      - develop
+      - dev/*
+      - feature/*
+      - hotfix/*
     paths:
       - 'src/**'
   pull_request:
     branches:
       - main
-      - develop
+      - dev/*
+      - feature/*
+      - hotfix/*
     paths:
       - 'src/**'
 
