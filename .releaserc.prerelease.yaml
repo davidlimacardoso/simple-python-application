@@ -5,6 +5,5 @@ plugins:
   - "@semantic-release/github"
 
 branches:
-  - main
   - name: develop
     prerelease: '${name.replace(/^dev\//g, "dev-")}'
