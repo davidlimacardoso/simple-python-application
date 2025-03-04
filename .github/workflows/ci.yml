@@ -55,6 +55,15 @@ jobs:
       id-token: write
     uses: davidlimacardoso/github-actions/.github/workflows/semantic-release-v2.yml@main
     
+  release:
+    needs: [pre_release]
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ needs.release.outputs.release_version }}
+    steps:
+      
+      - name: Release
+        run: echo ${{ env.TAG }}
   
   # build-and-push:
   #   needs: [release]
