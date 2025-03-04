@@ -6,5 +6,5 @@ plugins:
 
 branches:
   - main
-  - name: dev/*
+  - name: develop
     prerelease: '${name.replace(/^dev\//g, "dev-")}'

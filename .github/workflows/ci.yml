@@ -44,16 +44,18 @@ jobs:
         run: |
           pytest
 
-  release:
+  pre_release:
     needs: [test]
     name: Semantic Release
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+    if: github.event_name == 'push' && github.ref == 'refs/heads/develop'
     permissions:
       contents: write 
       issues: write 
       pull-requests: write
       id-token: write
     uses: davidlimacardoso/github-actions/.github/workflows/semantic-release-v2.yml@main
+    with: 
+      pre_release: true 
     
   
   # build-and-push:
