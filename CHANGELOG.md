@@ -1,3 +1,25 @@
+# [1.9.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.8.0...v1.9.0) (2025-03-04)
+
+
+### Bug Fixes
+
+* corrigir configuração de branches no arquivo de lançamento ([db41746](https://github.com/davidlimacardoso/simple-python-application/commit/db41746d81c16f99d26bd14886a1176afa02fce0))
+
+
+### Features
+
+* alterar cor de fundo padrão para branco no template HTML ([9423fee](https://github.com/davidlimacardoso/simple-python-application/commit/9423fee95eec4d216491415f90d2835cee4b8551))
+* alterar cor de fundo padrão para branco no template HTML ([4fcf750](https://github.com/davidlimacardoso/simple-python-application/commit/4fcf7509e354479031598489632f4c4eb02a7e37))
+* alterar cor de fundo padrão para branco no template HTML ([a6a5738](https://github.com/davidlimacardoso/simple-python-application/commit/a6a573821c6cc5a8ea831b7905d0151b85b5770b))
+* alterar cor de fundo padrão para branco no template HTML ([619fa6c](https://github.com/davidlimacardoso/simple-python-application/commit/619fa6cb8e0d367847b70601db9eda333a3feb71))
+* alterar cor de fundo padrão para branco no template HTML ([c35bb72](https://github.com/davidlimacardoso/simple-python-application/commit/c35bb72e0da61e8eb954b8ffc381b2f5949f56bf))
+* alterar cor de fundo padrão para branco no template HTML ([96cf0d1](https://github.com/davidlimacardoso/simple-python-application/commit/96cf0d1da4841e6e3a0290b9de2e26884ac2c217))
+* alterar cor de fundo padrão para verde no template HTML ([348f730](https://github.com/davidlimacardoso/simple-python-application/commit/348f73005c211bf56d91649f3eb5b4f0043de7ab))
+* alterar cor de fundo padrão para verde no template HTML ([627d530](https://github.com/davidlimacardoso/simple-python-application/commit/627d5305448811293da2098ddb49ad5e79cf5634))
+* alterar cor de fundo padrão para verde no template HTML ([3e3cb95](https://github.com/davidlimacardoso/simple-python-application/commit/3e3cb95aaeb12041cdf08f3057b96f41c57b455b))
+* alterar cor de fundo padrão para verde no template HTML ([11c4f33](https://github.com/davidlimacardoso/simple-python-application/commit/11c4f33c8281417a8d0d476cba24438562c67c79))
+* alterar cor de fundo padrão para verde no template HTML ([98cd5ae](https://github.com/davidlimacardoso/simple-python-application/commit/98cd5ae3b6c0807d0347d35011a793016aa1cce2))
+
 # [1.8.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.7.0...v1.8.0) (2025-03-03)
 
 
