@@ -1,3 +1,13 @@
+# [1.11.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.10.0...v1.11.0) (2025-03-04)
+
+
+### Features
+
+* adicionar branch 'main' ao arquivo de configuração de pré-lançamento ([31a7f94](https://github.com/davidlimacardoso/simple-python-application/commit/31a7f94110b881385fcb4386b532e648e7af682c))
+* adicionar etapa de lançamento no workflow de CI ([cc25fcd](https://github.com/davidlimacardoso/simple-python-application/commit/cc25fcd9e6e77081a0c5842411d2a947bbc1ae13))
+* alterar cor de fundo padrão para branco no template HTML ([aa14176](https://github.com/davidlimacardoso/simple-python-application/commit/aa1417694df40c9096221e0f81d9e9bdbb706236))
+* alterar cor de fundo padrão para verde no template HTML ([1b645dd](https://github.com/davidlimacardoso/simple-python-application/commit/1b645ddcd632556e389e0426a89d46f0068259d2))
+
 # [1.10.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.9.0...v1.10.0) (2025-03-04)
 
 
