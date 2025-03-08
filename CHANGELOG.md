@@ -1,3 +1,20 @@
+# [1.13.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.12.0...v1.13.0) (2025-03-08)
+
+
+### Features
+
+* adicionar condição para tag 'latest' no workflow de CI ([231fcc3](https://github.com/davidlimacardoso/simple-python-application/commit/231fcc37c12236fc2f8bb649897774dc4fabf4eb))
+* alterar cor de fundo padrão para branco no template HTML ([ef78dcc](https://github.com/davidlimacardoso/simple-python-application/commit/ef78dccef3a10bf2f797f27d94072b8cd0a1eba4))
+* alterar cor de fundo padrão para branco no template HTML ([33e4235](https://github.com/davidlimacardoso/simple-python-application/commit/33e4235e093a39251d746501c039127f8f3b7843))
+* alterar cor de fundo padrão para branco no template HTML ([dc99a6a](https://github.com/davidlimacardoso/simple-python-application/commit/dc99a6a355ad7bbe5007f7830d675fb86944538c))
+* alterar cor de fundo padrão para branco no template HTML ([45a75d0](https://github.com/davidlimacardoso/simple-python-application/commit/45a75d03a33816ff9a2ba913c8021c42b64d9e70))
+* alterar cor de fundo padrão para branco no template HTML ([590f185](https://github.com/davidlimacardoso/simple-python-application/commit/590f1851f72ec06d40122826f5a4176253442e18))
+* alterar cor de fundo padrão para verde no template HTML ([8b43202](https://github.com/davidlimacardoso/simple-python-application/commit/8b432028df65125b8776acebbc8b5fa29b81a2d3))
+* alterar cor de fundo padrão para verde no template HTML ([4371bad](https://github.com/davidlimacardoso/simple-python-application/commit/4371badef7dec886b75c0d034dddca263db6e4af))
+* alterar cor de fundo padrão para verde no template HTML ([c0d42db](https://github.com/davidlimacardoso/simple-python-application/commit/c0d42db1eef019c380feaea8cd3516bf20f82002))
+* alterar cor de fundo padrão para verde no template HTML ([20c9a58](https://github.com/davidlimacardoso/simple-python-application/commit/20c9a5824c7b2ce490a38658aaa4da39c6342f02))
+* alterar cor de fundo padrão para verde no template HTML ([b37be98](https://github.com/davidlimacardoso/simple-python-application/commit/b37be98f7eb2191ecacc5d2fd841e3d8efe4f4c0))
+
 # [1.12.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.11.0...v1.12.0) (2025-03-08)
 
 
