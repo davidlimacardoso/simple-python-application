@@ -53,11 +53,11 @@ jobs:
       issues: write 
       pull-requests: write
       id-token: write
-    uses: davidlimacardoso/github-actions/.github/workflows/semantic-release-v2.yml@main
+    uses: davidlimacardoso/github-actions/.github/workflows/semantic-release.yml@main
     
   
   build:
-    needs: [test]
+    needs: [release]
     runs-on: ubuntu-latest
     env:
       TAG: ${{ needs.release.outputs.release_version }}
