@@ -47,7 +47,7 @@ jobs:
   release:
     needs: [test]
     name: Semantic Release
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop'
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     permissions:
       contents: write 
       issues: write 
@@ -56,11 +56,12 @@ jobs:
     uses: davidlimacardoso/github-actions/.github/workflows/semantic-release-v2.yml@main
     
   
-  build:
-    needs: [test]
+  build-and-push:
+    needs: [release]
     runs-on: ubuntu-latest
     env:
       TAG: ${{ needs.release.outputs.release_version }}
+
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     steps:
       - uses: actions/checkout@v4
@@ -75,10 +76,10 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: src/
-          # push: true
+          push: true
           file: src/Dockerfile
           tags: |
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}-${{ env.ENVIRONMENT }}:${{ env.TAG }}
-            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}-${{ env.ENVIRONMENT }}:latest
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:${{ env.TAG }}
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/:latest
           cache-to: type=inline
