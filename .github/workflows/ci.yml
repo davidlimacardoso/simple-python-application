@@ -59,7 +59,7 @@ jobs:
     needs: [pre_release]
     runs-on: ubuntu-latest
     env:
-      TAG: ${{ needs.release.outputs.release_version }}
+      TAG: ${{ needs.pre_release.outputs.release_version }}
     steps:
       
       - name: Release
