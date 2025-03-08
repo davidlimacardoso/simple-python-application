@@ -80,8 +80,6 @@ jobs:
           file: src/Dockerfile
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:${{ env.TAG }}
-            if [ "${{ env.ENVIRONMENT }}" == "prod" ]; then
-              ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest
-            fi
+            ${{ env.ENVIRONMENT == 'prod' && ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest || '' }}
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/:latest
           cache-to: type=inline
