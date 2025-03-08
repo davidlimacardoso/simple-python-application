@@ -61,6 +61,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TAG: ${{ needs.release.outputs.release_version }}
+      LATEST_TAG: ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest
 
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     steps:
@@ -80,6 +81,6 @@ jobs:
           file: src/Dockerfile
           tags: |
             ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:${{ env.TAG }}
-            ${{ env.ENVIRONMENT == 'prod' && ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest || '' }}
+            ${{ env.ENVIRONMENT == 'prod' && env.LATEST_TAG || '' }}
           cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/:latest
           cache-to: type=inline
