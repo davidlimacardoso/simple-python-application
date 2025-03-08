@@ -21,7 +21,7 @@ env:
   PROJECT_NAME: simple-python-application
   ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'prod' || github.ref == 'refs/heads/develop' && 'dev' || 'unknown' }}
 
-  jobs:
+jobs:
 
   test:
     runs-on: ubuntu-latest
