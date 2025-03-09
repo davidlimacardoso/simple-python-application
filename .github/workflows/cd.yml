@@ -16,7 +16,7 @@ jobs:
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     uses: davidlimacardoso/github-actions/.github/workflows/update-argocd-apps-helm-tag.yml@main
     with:
-      project-name: ${{ env.PROJECT_NAME }}
-      environment: ${{ env.ENVIRONMENT }}
+      project-name: simple-python-application
+      environment: ${{ github.ref == 'refs/heads/main' && 'prod' || github.ref == 'refs/heads/develop' && 'dev' || 'unknown' }}
       tag: ${{ needs.build-and-push.outputs.tag }}
 
