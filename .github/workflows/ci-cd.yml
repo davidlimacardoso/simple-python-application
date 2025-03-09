@@ -99,3 +99,4 @@ jobs:
       project_name: ${{ needs.build-and-push.outputs.project_name }}
       environment: ${{ needs.build-and-push.outputs.environment }}
       new_tag: ${{ needs.build-and-push.outputs.tag }}
+      github_pat: ${{ secrets.PAT_GITHUB }}
