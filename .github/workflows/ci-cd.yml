@@ -65,6 +65,7 @@ jobs:
       tag: ${{ needs.release.outputs.release_version }}
       project_name: ${{ env.PROJECT_NAME }}
       environment: ${{ env.ENVIRONMENT }}
+      github_pat: ${{ secrets.PAT_GITHUB }}
 
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     steps:
@@ -99,4 +100,4 @@ jobs:
       project_name: ${{ needs.build-and-push.outputs.project_name }}
       environment: ${{ needs.build-and-push.outputs.environment }}
       new_tag: ${{ needs.build-and-push.outputs.tag }}
-      github_pat: ${{ secrets.PAT_GITHUB }}
+      github_pat: ${{ needs.build-and-push.outputs.github_pat }}
