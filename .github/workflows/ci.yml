@@ -61,6 +61,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TAG: ${{ needs.release.outputs.release_version }}
+    outputs:
+      tag: ${{ needs.release.outputs.release_version }}
 
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     steps:
