@@ -1,0 +1,99 @@
+name: CICD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'src/**'
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths:
+      - 'src/**'
+
+permissions:
+  contents: read
+
+env:
+  PROJECT_NAME: simple-python-application
+  ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'prod' || github.ref == 'refs/heads/develop' && 'dev' || 'unknown' }}
+
+jobs:
+
+  test:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+          if [ -f src/requirements.txt ]; then pip install -r src/requirements.txt; fi
+          
+      - name: Run tests
+        run: |
+          pytest
+
+  release:
+    needs: [test]
+    name: Semantic Release
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    permissions:
+      contents: write 
+      issues: write 
+      pull-requests: write
+      id-token: write
+    uses: davidlimacardoso/github-actions/.github/workflows/semantic-release-v2.yml@main
+    
+  
+  build-and-push:
+    needs: [release]
+    runs-on: ubuntu-latest
+    env:
+      TAG: ${{ needs.release.outputs.release_version }}
+    outputs:
+      tag: ${{ needs.release.outputs.release_version }}
+
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Variables
+        run: echo "LATEST_TAG=${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:latest" >> $GITHUB_ENV
+        
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: src/
+          push: true
+          file: src/Dockerfile
+          tags: |
+            ${{ secrets.DOCKER_USERNAME }}/${{ env.PROJECT_NAME }}:${{ env.TAG }}
+            ${{ env.ENVIRONMENT == 'prod' && env.LATEST_TAG || '' }}
+          cache-from: type=registry,ref=${{ secrets.DOCKER_USERNAME }}/:latest
+          cache-to: type=inline
+
+  deploy:
+    needs: [ build-and-push]
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
+    uses: davidlimacardoso/github-actions/.github/workflows/update-argocd-apps-helm-tag.yml@main
+    with:
+      project-name: ${{ env.PROJECT_NAME }}
+      environment: ${{ env.ENVIRONMENT }}
+      tag: ${{ needs.build-and-push.outputs.tag }}
