@@ -12,19 +12,11 @@ env:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
     needs: build-and-push
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
-    steps:
-      - uses: actions/checkout@v4
+    uses: davidlimacardoso/github-actions/.github/workflows/update-argocd-apps-helm-tag.yml@main
+    with:
+      project-name: ${{ env.PROJECT_NAME }}
+      environment: ${{ env.ENVIRONMENT }}
+      tag: ${{ needs.build-and-push.outputs.tag }}
 
-      - name: Set up environments
-        run: |
-          echo "NEW_TAG=${{ needs.build-and-push.outputs.tag }}" >> $GITHUB_ENV
-      
-      - name: Deploy to Argo CD
-        uses: davidlimacardoso/github-actions/.github/workflows/update-argocd-apps-helm-tag.yml@main
-        with:
-          project-name: ${{ env.PROJECT_NAME }}
-          environment: ${{ env.ENVIRONMENT }}
-          tag: ${{ needs.build-and-push.outputs.tag }}
