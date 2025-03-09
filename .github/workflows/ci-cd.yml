@@ -98,4 +98,4 @@ jobs:
     with:
       project-name: ${{ needs.build-and-push.outputs.project_name }}
       environment: ${{ needs.build-and-push.outputs.environment }}
-      tag: ${{ needs.build-and-push.outputs.tag }}
+      new_tag: ${{ needs.build-and-push.outputs.tag }}
