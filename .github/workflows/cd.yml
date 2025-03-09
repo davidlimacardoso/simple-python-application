@@ -11,12 +11,33 @@ env:
   ENVIRONMENT: ${{ github.ref == 'refs/heads/main' && 'prod' || github.ref == 'refs/heads/develop' && 'dev' || 'unknown' }}
 
 jobs:
+
+  setup-variables:
+    runs-on: ubuntu-latest
+    outputs:
+      project_name: ${{ env.PROJECT_NAME }}
+      environment: ${{ env.ENVIRONMENT }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Variables
+        run: |
+          echo "PROJECT_NAME=simple-python-application" >> $GITHUB_ENV
+          echo "ENVIRONMENT=${{ github.ref == 'refs/heads/main' && 'prod' || github.ref == 'refs/heads/develop' && 'dev' || 'unknown' }}" >> $GITHUB_ENV
+
+      - name: Set Outputs
+        id: release
+        run: |
+          echo "::set-output name=environment::${{ env.ENVIRONMENT }}"
+          echo "::set-output name=project_name::${{ env.PROJECT_NAME }}"
+
   deploy:
-    needs: build-and-push
+    needs: [ build-and-push, setup-variables ]
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     uses: davidlimacardoso/github-actions/.github/workflows/update-argocd-apps-helm-tag.yml@main
     with:
-      project-name: simple-python-application
-      environment: ${{ github.ref == 'refs/heads/main' && 'prod' || github.ref == 'refs/heads/develop' && 'dev' || 'unknown' }}
+      project-name: ${{ needs.setup-variables.outputs.project_name }}
+      environment: ${{ needs.setup-variables.outputs.environment }}
       tag: ${{ needs.build-and-push.outputs.tag }}
 
