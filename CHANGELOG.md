@@ -1,3 +1,52 @@
+# [1.14.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.13.0...v1.14.0) (2025-03-10)
+
+
+### Bug Fixes
+
+* corrigir nome da variável 'project-name' para 'project_name' no workflow CI/CD ([67fb9e1](https://github.com/davidlimacardoso/simple-python-application/commit/67fb9e10c23f99bd038799a199e6417f0f9a8cc2))
+* renomear variável 'tag' para 'new_tag' no workflow CI/CD ([92166df](https://github.com/davidlimacardoso/simple-python-application/commit/92166dffa3a8d3b1c66add574a79d4b9f38b5196))
+
+
+### Features
+
+* adicionar etapa de configuração de variáveis no pipeline de CD ([5e78718](https://github.com/davidlimacardoso/simple-python-application/commit/5e78718379378c34c5b3e0ebff0eddb591ef3d41))
+* adicionar variável github_pat ao workflow ci-cd ([1313896](https://github.com/davidlimacardoso/simple-python-application/commit/1313896ef6eee4df6b1d1c22eefa8f7c300cfdd1))
+* alterar cor de fundo padrão para amarelo no template HTML ([522a3b8](https://github.com/davidlimacardoso/simple-python-application/commit/522a3b8c67c721896394256a2ca04195bddbb7bf))
+* alterar cor de fundo padrão para amarelo no template HTML ([06eb871](https://github.com/davidlimacardoso/simple-python-application/commit/06eb871a7d2530c5644d76ff0680d18b4222589d))
+* alterar cor de fundo padrão para amarelo no template HTML ([2a48b4f](https://github.com/davidlimacardoso/simple-python-application/commit/2a48b4f3024e758c2109267cc111edfd5f26a308))
+* alterar cor de fundo padrão para amarelo no template HTML ([c498db5](https://github.com/davidlimacardoso/simple-python-application/commit/c498db5915a5824751a85acb7ddf23fa475601b8))
+* alterar cor de fundo padrão para azul no template HTML ([a704e78](https://github.com/davidlimacardoso/simple-python-application/commit/a704e7846f4bfb58cffd89cc731c0175182b1984))
+* alterar cor de fundo padrão para azul no template HTML ([f30c5a0](https://github.com/davidlimacardoso/simple-python-application/commit/f30c5a0bcce6cea869d42b5032942cbd000cc821))
+* alterar cor de fundo padrão para azul no template HTML ([c081ae3](https://github.com/davidlimacardoso/simple-python-application/commit/c081ae36bc5066746aea3d86ea6f6f276a4adb6b))
+* alterar cor de fundo padrão para azul no template HTML ([83ff583](https://github.com/davidlimacardoso/simple-python-application/commit/83ff58338ee73700bd2b9c34a9ae622a75b75160))
+* alterar cor de fundo padrão para azul no template HTML ([d15e720](https://github.com/davidlimacardoso/simple-python-application/commit/d15e7202d0558c933a904aa2b615f2055f4f198d))
+* alterar cor de fundo padrão para azul no template HTML ([02fc4f3](https://github.com/davidlimacardoso/simple-python-application/commit/02fc4f3b8366afd0c1e77e253a01685e1ac80a1b))
+* alterar cor de fundo padrão para azul no template HTML ([5be0763](https://github.com/davidlimacardoso/simple-python-application/commit/5be0763283010ebfde177309433e3c7b88df3cfc))
+* alterar cor de fundo padrão para azul no template HTML ([5b30ffc](https://github.com/davidlimacardoso/simple-python-application/commit/5b30ffc0f58d3fa736148894f8fad567b53f718b))
+* alterar cor de fundo padrão para azul no template HTML ([b245efe](https://github.com/davidlimacardoso/simple-python-application/commit/b245efe396e1d2f43b45fc64aaadcadff9be0818))
+* alterar cor de fundo padrão para azul no template HTML ([daff100](https://github.com/davidlimacardoso/simple-python-application/commit/daff100e31c21be46347e815d4dfdbfa9ba6b775))
+* alterar cor de fundo padrão para azul no template HTML ([03d7f8f](https://github.com/davidlimacardoso/simple-python-application/commit/03d7f8f4577572cf64d398bbd827276c7246b8f9))
+* alterar cor de fundo padrão para branco no template HTML ([f116204](https://github.com/davidlimacardoso/simple-python-application/commit/f116204fc1a84229051836b3b985b370d12eb4c3))
+* alterar cor de fundo padrão para branco no template HTML ([e9138c2](https://github.com/davidlimacardoso/simple-python-application/commit/e9138c2615b9f27d242ee2cd554517f332986809))
+* alterar cor de fundo padrão para branco no template HTML ([e0735f7](https://github.com/davidlimacardoso/simple-python-application/commit/e0735f7e3e1c9764d2e1dd29b15ac270756127bb))
+* alterar cor de fundo padrão para branco no template HTML ([44bbba7](https://github.com/davidlimacardoso/simple-python-application/commit/44bbba77ee140038eaee13532e948500307fa538))
+* alterar cor de fundo padrão para branco no template HTML ([bd313d9](https://github.com/davidlimacardoso/simple-python-application/commit/bd313d95387447d2ea6b7d0ccd094e2b43728452))
+* alterar cor de fundo padrão para branco no template HTML ([3d9d269](https://github.com/davidlimacardoso/simple-python-application/commit/3d9d269584dab294ceb8681b8d7b07464710df02))
+* alterar cor de fundo padrão para rosa no template HTML ([2c2925b](https://github.com/davidlimacardoso/simple-python-application/commit/2c2925b70b147599e917087856e03a1f700d5459))
+* alterar cor de fundo padrão para rosa no template HTML ([9dfd8a0](https://github.com/davidlimacardoso/simple-python-application/commit/9dfd8a08bbe4510be595753dcc6c1d0b8963072d))
+* alterar cor de fundo padrão para rosa no template HTML ([d4c6e30](https://github.com/davidlimacardoso/simple-python-application/commit/d4c6e300fc135786d0689b0bc455652a71b92ced))
+* alterar cor de fundo padrão para rosa no template HTML ([8ba448d](https://github.com/davidlimacardoso/simple-python-application/commit/8ba448db2ec28f3ab60075d960c28297977c94e8))
+* alterar cor de fundo padrão para rosa no template HTML ([3c8e48c](https://github.com/davidlimacardoso/simple-python-application/commit/3c8e48cdd8fd3f664e9fe3aea1ad32b2935913af))
+* alterar cor de fundo padrão para verde no template HTML ([8e92c31](https://github.com/davidlimacardoso/simple-python-application/commit/8e92c31614313de7534b60fefba368f1df3dfba0))
+* alterar cor de fundo padrão para verde no template HTML ([d074865](https://github.com/davidlimacardoso/simple-python-application/commit/d0748650da592ce73105e112f285a1b95950243e))
+* alterar cor de fundo padrão para verde no template HTML ([715682b](https://github.com/davidlimacardoso/simple-python-application/commit/715682b191a12b0875c056e978fb9f2054230ab7))
+* alterar cor de fundo padrão para verde no template HTML ([e33b14a](https://github.com/davidlimacardoso/simple-python-application/commit/e33b14aff9b8336edbe9773a4a86e087a046b5ae))
+* alterar cor de fundo padrão para verde no template HTML ([d354892](https://github.com/davidlimacardoso/simple-python-application/commit/d354892195d4b13ceb1a93cfeb57e2967afae75b))
+* atualizar configuração do pipeline de CD para uso de nomes de projeto e ambientes específicos ([c374942](https://github.com/davidlimacardoso/simple-python-application/commit/c374942e880671dbdb390a8ccefab8efa065a821))
+* atualizar variável github_pat no workflow ci-cd e alterar cor de fundo padrão para amarelo no template HTML ([6f7ab12](https://github.com/davidlimacardoso/simple-python-application/commit/6f7ab126094ce03b65f287de9e08de32ca2fa651))
+* corrigir erro de digitação em secrets e alterar cor de fundo padrão para amarelo no template HTML ([6315be0](https://github.com/davidlimacardoso/simple-python-application/commit/6315be03d79988c7905df58e3c1d33afc4276618))
+* substituir variável github_pat por secrets no workflow ci-cd ([7f980ed](https://github.com/davidlimacardoso/simple-python-application/commit/7f980eda62097992d146903f0dead2ec7c499088))
+
 # [1.13.0](https://github.com/davidlimacardoso/simple-python-application/compare/v1.12.0...v1.13.0) (2025-03-08)
 
 
